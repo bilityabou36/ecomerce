@@ -1,0 +1,6 @@
+env
+__pycache__
+.env
+media
+local_settings.py
+SECRET_KEY = 'django-insecure-xuaur$ym!2swfu6+47+38(1rl^x0-=v=8^nvqaistvfymtzfbg'
