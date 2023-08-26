@@ -3,6 +3,8 @@ from rest_framework.response import Response
 from rest_framework.decorators import api_view, permission_classes 
 from rest_framework.permissions import IsAuthenticated, IsAdminUser
 from rest_framework.exceptions import NotFound
+from django.http import HttpResponse
+from django.conf import settings
 
 from base_app.models import Product
 from base_app.serializers import ProductSerializer, UserSerializer 
@@ -26,3 +28,5 @@ def getProduct(request, pk):
         return Response(serializer.data)
     except Product.DoesNotExist:
         raise NotFound(detail="Product not found", code=404)
+
+

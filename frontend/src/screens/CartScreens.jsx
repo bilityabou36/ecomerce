@@ -26,7 +26,7 @@ function CartScreens() {
     }
 
     const checkoutHandler = () => {
-        navigate('/login?redirect=shipping');
+        navigate('/shipping'); //updated to shipping. rember to come back to this
     }
 
     return (
